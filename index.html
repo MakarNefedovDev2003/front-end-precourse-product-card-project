@@ -13,12 +13,17 @@
 	<section>
 		<div class="poduct-card">
 			<div class="product-images-block">
-				<img src="./assets/images/main-image-cup.png" alt="main image cup">
-				<div class="preview">
-					<img src="./assets/images/preview-cup-1.png" alt="preview cup">
+				<div class="main-image-wrapper">
+					<img src="./assets/images/main-image-cup.png" alt="main image cup">
 				</div>
-				<div class="preview">
-					<img src="./assets/images/preview-cup-2.png" alt="preview cup">
+				
+				<div class="preview-wrapper">
+					<div class="preview">
+						<img src="./assets/images/preview-cup-1.png" alt="preview cup">
+					</div>
+					<div class="preview">
+						<img src="./assets/images/preview-cup-2.png" alt="preview cup">
+					</div>
 				</div>
 			</div>
 			<div class="product-info-block">
@@ -28,7 +33,7 @@
 				modern, created out of a deep respect for Royal British history and traditions</p>
 				<div class="color-options">
 					<h2 class="title">Color options</h2>
-					<ul>
+					<ul class="list-color-options">
 						<li class="selected-circle">
 							<div class="circle blue"></div>
 						</li>
@@ -46,19 +51,21 @@
 						</li>
 					</ul>
 				</div>
-				<div>
-					<h2 class="title">Quantity</h2>
-					<select name="quantity">
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5</option>
-					</select>
-				</div>
-				<div>
-					<h2 class="title">Price</h2>
-					<span class="pruduct-price">eur 39,00</span>
+				<div class="product-settings-wrapper">
+					<div>
+						<h2 class="title">Quantity</h2>
+						<select name="quantity">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</div>
+					<div>
+						<h2 class="title">Price</h2>
+						<span class="pruduct-price">eur 39,00</span>
+					</div>
 				</div>
 				<button class="btn">Add To Basket</button>
 			</div>
