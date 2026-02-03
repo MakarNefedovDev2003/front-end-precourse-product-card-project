@@ -207,5 +207,11 @@ select {
 	font-size: 18px;
 	letter-spacing: 0.01em;
 	color: #fff;
-	margin-top: 75px; 
+	margin-top: 75px;
+	cursor: pointer;
+	transition: 2s; 
+}
+
+.btn:hover {
+	transform: scale(0.9);
 }
