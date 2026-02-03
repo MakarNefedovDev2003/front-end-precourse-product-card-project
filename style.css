@@ -50,11 +50,17 @@ section {
 .preview {
 	width: 80px;
 	height: 80px;
-	box-shadow: 8px 8px 16px 0 rgba(81, 91, 117, 0.25);
 	background-color: #fff;
 	display: flex;
 	justify-content: center;
-	align-items: center
+	align-items: center;
+	cursor: pointer;
+	transition: 2s;
+}
+
+.preview.preview-selected,
+.preview:hover {
+	box-shadow: 8px 8px 16px 0 rgba(81, 91, 117, 0.25);
 }
 
 .product-info-block {
@@ -76,7 +82,6 @@ section {
 	font-size: 16px;
 	letter-spacing: 0.01em; 
 	color: rgba(20, 20, 20, 0.4);
-	margin-bottom: 60px;
 }
 
 .product-text {
@@ -85,6 +90,7 @@ section {
 	line-height: 1.6;
 	letter-spacing: 0.01em;
 	color: rgba(20, 20, 20, 0.7);
+	margin-top: 60px;
 	margin-bottom: 65px;
 }
 
@@ -115,6 +121,16 @@ li.selected-circle {
 	background-color: #fff;
 	box-shadow: 2px 2px 6px 0 rgba(81, 91, 117, 0.25);
 	padding: 7px;
+}
+
+.circle-item {
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	background-color: #fff;
+	padding: 7px;
+	cursor: pointer;
+	transition: 2s;
 }
 
 .circle {
@@ -152,6 +168,11 @@ li.selected-circle {
 	flex-grow: 1;
 }
 
+.circle-item.selected-circle,
+.circle-item:hover {
+	box-shadow: 2px 2px 6px 0 rgba(81, 91, 117, 0.25);
+}
+
 select {
 	width: 80px;
 	height: 24px;
@@ -186,5 +207,5 @@ select {
 	font-size: 18px;
 	letter-spacing: 0.01em;
 	color: #fff;
-	margin-top: 75px;
+	margin-top: 75px; 
 }
