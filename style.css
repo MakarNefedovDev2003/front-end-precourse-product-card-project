@@ -13,9 +13,11 @@ ul {
 }
 
 section { 
-	width: 1440px;
-	height: 1024px;
+	height: 100vh;
 	background-color: #eff2f9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .poduct-card {
@@ -130,7 +132,6 @@ li.selected-circle {
 	background-color: #fff;
 	padding: 7px;
 	cursor: pointer;
-	transition: 2s;
 }
 
 .circle {
@@ -171,6 +172,7 @@ li.selected-circle {
 .circle-item.selected-circle,
 .circle-item:hover {
 	box-shadow: 2px 2px 6px 0 rgba(81, 91, 117, 0.25);
+	transform: translateY(-5px);
 }
 
 select {
@@ -188,6 +190,7 @@ select {
 	background-repeat: no-repeat;
 	background-position: right 0 top 50%;
 	border: none;
+	cursor: pointer;
 }
 
 .pruduct-price {
@@ -213,5 +216,5 @@ select {
 }
 
 .btn:hover {
-	transform: scale(0.9);
+	transform: scale(0.8);
 }
